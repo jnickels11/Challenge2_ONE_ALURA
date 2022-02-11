@@ -15,8 +15,6 @@ function dibujarBase(){
     pincel.strokeStyle = "#000"
     pincel.stroke()
     pincel.closePath();
-
-
 }
 
 function dibujarPoste(){

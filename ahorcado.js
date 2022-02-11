@@ -37,7 +37,9 @@ function verificarPalabras(){
 var comienzaJuego=document.querySelector("#iniciar-juego");
 comienzaJuego.addEventListener("click",seleccionaRandom);
 
-
+var vidas = 4; 
+var repetidas=[];
+var erradas=[];
 var palabraSecreta;
 var palabraGuiones;
 
@@ -53,6 +55,44 @@ function seleccionaRandom()
     
     var secreto = document.querySelector("#palabraSecreta");
     secreto.textContent = palabraGuiones;
+    
+    dibujarBase();
+    dibujarPoste();
+    
+    
+    document.addEventListener('keydown', (event) => {
+        tecla = event.key.toUpperCase();
+        console.log("tecla presionada " + tecla);
+        revisarLetra(tecla);
+      }, false);
+    
+      function revisarLetra(letra){
+
+            if(!isNaN(letra))
+                {
+                    swal("ERROR", "Debe ingresar una letra", "error");
+                }
+                else{
+
+                    for (var i = 0; i < palabraSecreta.length; i++) {
+                        if(palabraSecreta[i]==letra)
+                        {   //hay que hacer que esto cambie el valor del array
+                            palabraGuiones[i] = letra;
+                            console.log(palabraGuiones)
+                            var cambiaguiones = document.getElementById("palabraSecreta");
+                            cambiaguiones.textContent=palabraGuiones;
+                        }
+                        
+                        
+                    }
+
+                }
+
+      }
+
+
+    
+    
     }
 
     
