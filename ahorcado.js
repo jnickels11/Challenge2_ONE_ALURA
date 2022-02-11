@@ -51,7 +51,8 @@ function seleccionaRandom()
     palabraGuiones = palabraSecreta.replace(/./g , "_ ");
     console.log(palabraGuiones);
     
+    var secreto = document.querySelector("#palabraSecreta");
+    secreto.textContent = palabraGuiones;
     }
 
-var secreto = document.querySelector("#palabraSecreta");
-secreto.textContent(palabraGuiones);
+    
