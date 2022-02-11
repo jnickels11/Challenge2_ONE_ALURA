@@ -1,0 +1,174 @@
+.titulo {
+    padding: 1px;
+    margin: auto;
+    margin-top: 0%;
+    background-color:rgb(220, 106, 6) ;
+  
+  }
+  
+  body{
+  background-color:#053555; 
+  background-size: cover;
+  
+    }
+  
+  .contenedor {
+    width: 40%;
+    max-width: 100px;
+  
+  }
+  #areaJuego{
+    width: 100%;
+    position: absolute;
+    justify-content:center;
+     
+  }
+  .comienzo {
+    font-size: 1;
+    height: 5vh;
+    width: 20%;
+     
+  }
+  
+  .btn {
+    color: rgb(5, 46, 3); 
+    font-size: 1rem; 
+   
+    padding: 16px; 
+    border-radius: 30px;  
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; font-variant: normal; text-transform: none; 
+  }
+    .btn:hover {  
+      background: #1C6EA4; }
+    .btn:active { 
+       background: #144E75; }
+  
+    
+  
+  .text-input {
+    border-radius: 0.5em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    padding: 0.5em;
+    width: 30%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #palabraSecreta {
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+        bottom: 10px;
+
+
+  }
+  
+  #letrasError {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 3px;
+      padding: 15px;
+      color:  #f12308;
+  
+  }
+  
+  .footer{
+    text-align: center;
+    margin-top: 90%;
+    margin-bottom: 0%;
+    
+    background-size: cover;
+    background-color:rgb(220, 106, 6);
+  }
+  
+  #vidas {
+  
+      font-size: 18px;
+      background-size: cover;
+      background-color: #852604;
+      color:  #cbc2c2;
+  
+  }
+  
+  
+  .comienzo {
+    font-size: 7rem;
+    position: absolute;
+    width: 100%;
+     
+  }
+  
+  #ahorcado {
+    
+    background-image: url("data:image/jpeg;base64,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");
+    width: 50%;
+    background-size: cover;
+    
+  }
+  .mensaje {
+    position: absolute;
+    
+    
+  }
+  
+  #resultadoGanador{
+    position: absolute;
+    top:11em;
+    font-size: 25px;
+    color: rgb(13, 111, 18);
+    background-color: rgb(230, 239, 240);
+  
+  
+  }
+  #resultadoPerdedor{
+    position: absolute;
+    
+    top : 20em;
+    font-size: 25px;
+    color: rgb(240, 30, 23);
+  
+  }
+  #reiniciar-juego{
+    left: 40em;
+    top: 5em;
+  
+   }
+  
+   @media screen and(min-width:300px) and ( max-width: 800px){
+     .comienzo{
+       width: 80%;
+     }
+     #areaJuego{
+       width: 80%;
+     }
+     body{
+      width: 80%;
+     }
+     .mensaje {
+       width: 30%;
+     }
+  
+   }
+
+   .reservado{
+    
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 90%;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    bottom: 0px;
+    color: #0a0a0a;
+    background-color: #8bbcf5;
+    
+    
+   }
